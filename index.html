@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"> 
+  <title>My Test Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      margin: 0;
+    }
+
+    #main {
+      display: flex;
+      flex: 1;
+    }
+
+    #main > article {
+      flex: 1;
+      order: 1;
+      background: #F3F5F4;
+    }
+
+    #main > nav,
+    #main > aside {
+      flex: 0 0 20vw;
+    }
+
+    #main > nav {
+      background: #D7E8D4;
+      order: 3;
+    }
+
+    #main > aside {
+      background: beige;
+      order: 2;
+    }
+    header {
+      background: yellowgreen;
+      height: 20vh;
+      text-align: center;
+      font-size: 80px;
+      color: black;
+      margin-top: -5vh;
+      line-height: 0.8;
+        }
+
+    footer {
+      background: yellowgreen;
+      height: 20vh;
+      text-align: center;
+      font-size: 20px;
+      color: black;
+      
+    }
+
+    header, footer, article, nav, aside {
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      margin: 0;
+      padding: 20px 0;
+      color: red;
+      text-shadow: 3px 3px 1px black; 
+    }
+    
+
+    h2 {
+      font-size: 20px;
+      text-align: center; 
+    }
+
+    .center-image {
+      display: flex;
+      justify-content: right;
+    }
+
+    p {
+      text-align: center; 
+    }
+
+    ul {
+      text-align: center;
+      list-style-position: inside; 
+    }
+
+    li {
+      text-align: center; 
+      list-style-position: inside; 
+    }
+  </style>
+</head>
+<body>
+  <header>Bridgelabz</header>
+  <div id="main">
+    <article>
+      <h1>Bridgelabz is cool</h1>
+      <div class="center-image">
+        <img src="istockphoto-1410391090-1024x1024.jpg" alt="Bridgelabz Logo" width="250">
+      </div>
+      <p>Welcome to Bridgelabz! We are a cool company that offers innovative solutions and training in the tech industry.</p>
+      <h2>Reasons why Bridgelabz is cool:</h2>
+      <ul>
+        <li>Highly skilled instructors</li>
+        <li>Practical hands-on projects</li>
+        <li>Industry-relevant curriculum</li>
+        <li>Job placement assistance</li>
+      </ul>
+      <p>Working together to keep the Tech Employability of Engineers alive and accessible, so Tech Companies worldwide can get contributors and creators for technology solutions.</p>
+    </article>
+    <nav>Employability</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer><p>To know more about us, visit <a href="https://WWW.Bridgelabz.COM">Bridgelabz</a> to learn more about our mission i.e. <strong>Employability to All</strong>.</p></footer>
+</body>
+</html>
